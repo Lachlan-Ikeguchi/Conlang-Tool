@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddaybsyqvbb7k"]
+
+[ext_resource type="Script" uid="uid://ca26vrm5ra4r4" path="res://src/generator.gd" id="1_5yxne"]
+
+[node name="Generator" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_5yxne")
+metadata/_tab_index = 0

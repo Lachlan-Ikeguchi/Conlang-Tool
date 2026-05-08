@@ -1,1 +1,1 @@
-extends TabContainer
+extends Control

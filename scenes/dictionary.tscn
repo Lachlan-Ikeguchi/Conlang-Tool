@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1v8uqyp07em5"]
+
+[ext_resource type="Script" uid="uid://doptthkrr0tj8" path="res://src/dictionary.gd" id="1_h0sft"]
+
+[node name="Dictionary" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_h0sft")
+metadata/_tab_index = 1
