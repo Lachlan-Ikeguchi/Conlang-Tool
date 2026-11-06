@@ -1,22 +1,24 @@
-[gd_scene load_steps=6 format=3 uid="uid://bq1qbced4phvx"]
+[gd_scene format=3 uid="uid://bq1qbced4phvx"]
 
-[ext_resource type="Theme" uid="uid://cxasjrmcdrbuj" path="res://src/theme.tres" id="1_efmwq"]
 [ext_resource type="PackedScene" uid="uid://bg5gkkt3bjhoc" path="res://scenes/language.tscn" id="2_b8iy7"]
 [ext_resource type="Script" uid="uid://dfb1u4sgab6i4" path="res://src/gui.gd" id="2_jqlde"]
 [ext_resource type="PackedScene" uid="uid://ddaybsyqvbb7k" path="res://scenes/generator.tscn" id="2_ynd5l"]
 [ext_resource type="PackedScene" uid="uid://c1v8uqyp07em5" path="res://scenes/dictionary.tscn" id="3_b8iy7"]
+[ext_resource type="PackedScene" uid="uid://dq2uco36x6ojo" path="res://scenes/repository.tscn" id="5_jqlde"]
 
-[node name="Gui" type="Control"]
+[sub_resource type="Theme" id="Theme_08a8y"]
+
+[node name="Gui" type="Control" unique_id=1638188530]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_efmwq")
+theme = SubResource("Theme_08a8y")
 script = ExtResource("2_jqlde")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=941547227]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -25,7 +27,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0.19607843, 0, 1)
 
-[node name="TabContainer" type="TabContainer" parent="."]
+[node name="TabContainer" type="TabContainer" parent="." unique_id=489255875]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -35,15 +37,17 @@ grow_vertical = 2
 tab_alignment = 1
 current_tab = 0
 
-[node name="Language" parent="TabContainer" instance=ExtResource("2_b8iy7")]
+[node name="Language" parent="TabContainer" unique_id=1713007384 instance=ExtResource("2_b8iy7")]
 layout_mode = 2
 
-[node name="Generator" parent="TabContainer" instance=ExtResource("2_ynd5l")]
+[node name="Generator" parent="TabContainer" unique_id=1715931096 instance=ExtResource("2_ynd5l")]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 1
 
-[node name="Dictionary" parent="TabContainer" instance=ExtResource("3_b8iy7")]
+[node name="Dictionary" parent="TabContainer" unique_id=739701209 instance=ExtResource("3_b8iy7")]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 2
+
+[node name="Repository" parent="." unique_id=360023657 instance=ExtResource("5_jqlde")]

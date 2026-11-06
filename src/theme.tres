@@ -1,3 +1,4 @@
 [gd_resource type="Theme" format=3 uid="uid://cxasjrmcdrbuj"]
 
 [resource]
+resource_local_to_scene = true

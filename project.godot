@@ -16,9 +16,13 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="Conglang Tool"
 run/main_scene="uid://bq1qbced4phvx"
-config/features=PackedStringArray("4.6")
+config/features=PackedStringArray("4.7")
 config/icon="res://icon.svg"
 
 [dotnet]
 
 project/assembly_name="Conglang Tool"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot-sqlite/plugin.cfg")

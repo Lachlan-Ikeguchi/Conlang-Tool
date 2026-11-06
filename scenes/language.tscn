@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://bg5gkkt3bjhoc"]
+[gd_scene format=3 uid="uid://bg5gkkt3bjhoc"]
 
 [ext_resource type="Script" uid="uid://c0tjdytpnr1np" path="res://src/language.gd" id="1_pfgvu"]
 
-[node name="Language" type="Control"]
+[node name="Language" type="Control" unique_id=2098705555]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,7 +12,7 @@ grow_vertical = 2
 script = ExtResource("1_pfgvu")
 metadata/_tab_index = 0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=803470493]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,23 +21,42 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=21808380]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=836306809]
 layout_mode = 2
 text = "Vowels"
 horizontal_alignment = 1
 
-[node name="VSeparator" type="VSeparator" parent="HBoxContainer"]
+[node name="CenterContainer" type="CenterContainer" parent="HBoxContainer/VBoxContainer" unique_id=811719086]
 layout_mode = 2
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/CenterContainer" unique_id=882027476]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="HBoxContainer/VBoxContainer/CenterContainer/HBoxContainer" unique_id=137521930]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/VBoxContainer/CenterContainer/HBoxContainer" unique_id=264208087]
+layout_mode = 2
+text = "Add"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/VBoxContainer" unique_id=614748217]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/VBoxContainer/ScrollContainer" unique_id=449521198]
+layout_mode = 2
+
+[node name="VSeparator" type="VSeparator" parent="HBoxContainer" unique_id=267767043]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer" unique_id=1970142899]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer2"]
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer2" unique_id=203913210]
 layout_mode = 2
 text = "Consonants"
 horizontal_alignment = 1
